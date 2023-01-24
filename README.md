@@ -3,7 +3,7 @@ Reworked QR Code Generator from  <link> https://github.com/bradtraversy/qr-code-
 
 <p dir="auto">Language switcher + known bug fixed coming soon. (maybe).</p>
 
-<a target="_blank" rel="noopener noreferrer" href="/blob/main/img/screen.png">
-<img src="/blob/main/img/screen.png"" style="max-width: 100%;">
+<a target="_blank" rel="noopener noreferrer" href="/img/screen.png">
+<img src="/img/screen.png"" style="max-width: 100%;">
                                                                                                       </a>
                                                                                                       </p>
