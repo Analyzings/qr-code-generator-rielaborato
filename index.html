@@ -1,0 +1,147 @@
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="keywords"
+    content="generatore qr code, generatore qr code online, qr code, qr codes, qrcodes, create qr code, qr code generator, create qrcodes, make a qr code, online qr code, creare qr code, come creare un qr code"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+  rel="stylesheet"
+  />
+  <meta
+    name="description"
+    content="Genera un immagine a forma di QR code per reindirizzarti su una pagina."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  <script src="js/main.js" defer></script>
+  <style>
+    #spinner {
+      display: none;
+    }
+  </style>
+    <title>Generatore di QR Code</title>
+</head>
+ <body>
+  <header class="bg-lime-500 p-4 mb-10">
+    <div class="max-w-5xl m-auto">
+      <div class="text-xl font-bold text-white">Generatore di QR Code</div>
+    </div>
+  </header>
+
+  <main>
+    <div
+        class="flex flex-col-reverse align-center justify-center m-auto md:max-w-4xl p-10 md:flex-row">
+        <div class="w-full md:w-2/3 mr-24">
+          <h1 class="text-3xl font-bold mb-4 md:text-4xl">
+        Generatore di QR Code</h1>
+        <p class="mb-4">
+          I QR code sono codici a barre scansionabili spesso utilizzati per facilitare l'accesso a informazioni e condivisione di contenuti.
+        </p>
+        <p>
+          Inserisci il tuo URL qui sotto per generare un codice QR e scaricare l'immagine.
+        </p>
+        <p>
+          <form 
+          id="generate-form" class="mt4">
+          <input
+          id="url"
+          placeholder="Inserisci un URL"
+          type="url"
+          class="w-full border-2 border-gray-200 rounded p-3 text-gray-dark mr-2 focus:outline-none"
+          required
+        />
+          <select id="size" class="w-full border-2 border-gray-200 rounded p-3 text-gray-dark mr-2 focus:outline-none">
+            <option value="100">100x100</option>
+            <option value="200">200x200</option>
+            <option value="300" selected>300x300</option>
+            <option value="400">400x400</option>
+            <option value="500">500x500</option>
+            <option value="600">600x600</option>
+            <option value="700">700x700</option>
+          </select>
+          
+          <button class="bg-gray-600 rounded w-full text-white py-3 px-4 mt-5 hover:bg-black" type="submit">
+            Genera codice QR
+          </button>
+        </form>
+    </div>
+    <div class="w-full md:w-1/3 self-center">
+      <img
+        class="w-1/2 m-auto mb--50 md:w-full"
+        src="img/qr-code.svg"
+        alt=""
+      />
+     </div>
+    </div>
+
+    <!-- Codice QR Generato -->
+    <div id="generated" class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
+      
+<!-- Caricamento -->
+</body>
+<html>
+<head>
+<div id="spinner" role="status">
+<div class="spinner"></div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+#spinner {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #AAF0C1;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  -webkit-animation: spin 1.25s linear infinite;
+  animation: spin 1.25s linear infinite;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+</head>
+<body>
+</body>
+</html>
+  <span class="sr-only">Caricamento...</span>
+</div>
+      <!-- Output del codice QR -->
+      <div id="qrcode" class="m-auto"></div>
+    </div>
+  </main>
+ </body>
+</html>
